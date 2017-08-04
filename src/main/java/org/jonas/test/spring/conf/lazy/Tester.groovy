@@ -1,6 +1,6 @@
-package org.jonas.test.javaconfig
+package org.jonas.test.spring.conf.lazy
 
-import org.jonas.test.other.javaconfig.InnerPkgConfig
+import org.jonas.test.spring.conf.other.lazy.InnerPkgConfig
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.SpringApplication

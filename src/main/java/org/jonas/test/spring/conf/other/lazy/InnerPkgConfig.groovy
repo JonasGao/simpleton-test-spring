@@ -1,4 +1,4 @@
-package org.jonas.test.other.javaconfig
+package org.jonas.test.spring.conf.other.lazy
 
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
