@@ -76,17 +76,17 @@ class CachingTestService {
         return null
     }
 
-    @Cacheable("test2", key = "#key.a.concat('?')")
+    @Cacheable("test2", key = "#key.a + '?' + #key.b")
     fun getData(key: Data): String {
         return LocalDateTime.now().toString() + " " + key
     }
 
-    @Cacheable("test2", key = "#key.a.concat('?')")
+    @Cacheable("test2", key = "#key.a + '?' + #key.b")
     fun tryGetData(key: Data): String? {
         return null
     }
 
-    @Cacheable("test2", key = "#key.a.concat('!')")
+    @Cacheable("test2", key = "#key.a + '!' + #key.b")
     fun cantGetData(key: Data): String? {
         return null
     }
