@@ -1,4 +1,4 @@
-package org.jonas.test.spring.cache
+package org.jonas.test.spring.cache.def
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
