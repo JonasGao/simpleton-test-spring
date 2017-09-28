@@ -22,11 +22,15 @@ public class TestApp implements CommandLineRunner {
     @Qualifier("B")
     private Data bean2;
 
+    @Autowired
+    private Data bean3;
+
     @Override
     public void run(String... args) throws Exception {
         System.out.println(bean1.getName());
         System.out.println(bean2.getName());
         System.out.println(bean1 == bean2);
+        System.out.println(bean3.getName());
     }
 }
 
@@ -47,5 +51,23 @@ class Data {
 
     public String getName() {
         return name;
+    }
+}
+
+@Configuration
+class Conf2 extends AbConf2 {
+    @Override
+    String getName() {
+        return "Hello Spring!";
+    }
+}
+
+abstract class AbConf2 {
+
+    abstract String getName();
+
+    @Bean
+    public Data bean3() {
+        return new Data(getName());
     }
 }
