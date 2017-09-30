@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Role
 @Role(BeanDefinition.ROLE_SUPPORT)
 class OtherConf {
     init {
-        print("配置 ")
+        print("配置 2")
         println(javaClass.name)
     }
 }
