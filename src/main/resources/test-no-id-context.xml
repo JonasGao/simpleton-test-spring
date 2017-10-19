@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean class="org.jonas.test.spring.xml.bean.noid.MessageService">
+        <property name="messages">
+            <util:map>
+                <entry key="groovy">
+                    <bean class="org.jonas.test.spring.xml.bean.noid.Message">
+                        <constructor-arg name="value" value="Groovy!"/>
+                    </bean>
+                </entry>
+                <entry key="kotlin">
+                    <bean class="org.jonas.test.spring.xml.bean.noid.Message">
+                        <constructor-arg name="value" value="Kotlin!"/>
+                    </bean>
+                </entry>
+            </util:map>
+        </property>
+    </bean>
+
+</beans>
