@@ -1,6 +1,6 @@
 package org.jonas.test.tests;
 
-import org.jonas.test.async.AsyncService;
+import org.jonas.test.spring.async.AsyncService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

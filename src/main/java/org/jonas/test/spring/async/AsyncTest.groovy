@@ -1,4 +1,4 @@
-package org.jonas.test.async
+package org.jonas.test.spring.async
 
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.SpringApplication
@@ -25,7 +25,7 @@ class AsyncTest {
 
 @SpringBootApplication
 @EnableAsync
-@ComponentScan("org.jonas.test.async")
+@ComponentScan("org.jonas.test.spring.async")
 class TestBooter extends AsyncConfigurerSupport implements CommandLineRunner {
 
     @Resource

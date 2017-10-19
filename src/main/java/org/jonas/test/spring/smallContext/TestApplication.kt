@@ -1,4 +1,4 @@
-package org.jonas.test.smallContext
+package org.jonas.test.spring.smallContext
 
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.SpringApplication
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
 }
 
 @SpringBootApplication
-open class Application : CommandLineRunner{
+open class Application : CommandLineRunner {
     override fun run(vararg args: String?) {
         println("Hello world!")
     }

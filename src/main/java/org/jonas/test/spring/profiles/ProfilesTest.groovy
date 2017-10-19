@@ -1,4 +1,4 @@
-package org.jonas.test.profiles
+package org.jonas.test.spring.profiles
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.CommandLineRunner
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component
  * Created by jonas on 2017/3/29.
  */
 @SpringBootApplication
-@ComponentScan("org.jonas.test.profiles")
+@ComponentScan("org.jonas.test.spring.profiles")
 class ProfilesTest {
     static void main(String[] args) {
         SpringApplication.run(ProfilesTest.class, args)
