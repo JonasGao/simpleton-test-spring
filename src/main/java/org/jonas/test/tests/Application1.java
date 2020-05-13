@@ -1,6 +1,6 @@
 package org.jonas.test.tests;
 
-import org.jonas.test.spring.async.AsyncService;
+//import org.jonas.test.spring.async.AsyncService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +11,7 @@ import org.springframework.data.redis.core.RedisTemplate;
  */
 public class Application1 implements CommandLineRunner {
 
-    private AsyncService a;
+//    private AsyncService a;
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
